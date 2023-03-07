@@ -15,6 +15,8 @@ namespace PXLProShopper04.Controllers
 
         public IActionResult Index()
         {
+            string username = "Etienne";
+            ViewData["Username"] = username;
             return View();
         }
 
