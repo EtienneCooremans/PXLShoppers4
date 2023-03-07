@@ -5,7 +5,7 @@ VisualStudioVersion = 17.4.33110.190
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PXLProShopper04", "PXLProShopper04.csproj", "{BE378EB0-2008-4189-B368-DB2931123D6A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockApi", "..\StockApi\StockApi.csproj", "{25627E5B-D854-4AAF-970E-7F76FEFE7AE7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StockApi", "..\StockApi\StockApi.csproj", "{25627E5B-D854-4AAF-970E-7F76FEFE7AE7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
