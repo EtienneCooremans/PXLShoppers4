@@ -9,15 +9,15 @@ builder.Services.AddControllersWithViews();
 var connectionString = builder.Configuration.GetConnectionString("ShopperDbConnection");
 builder.Services.AddDbContext<ShopperDbContext>(options => options.UseSqlServer(connectionString));
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<ShopperDbContext>();
+//builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+//    .AddEntityFrameworkStores<ShopperDbContext>();
 // Set the custom authentication scheme name options.SignInScheme = "MyIdentityScheme"; }) .AddEntityFrameworkStores<ApplicationDbContext>() .AddDefaultTokenProviders();
-builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
-{
-    options.SignIn.RequireConfirmedAccount = true;
-    options.Password.RequiredLength = 8;
-    options.Lockout.MaxFailedAccessAttempts = 5;
-});
+//builder.Services.AddIdentity<IdentityUser, IdentityRole>(options =>
+//{
+//    options.SignIn.RequireConfirmedAccount = true;
+//    options.Password.RequiredLength = 8;
+//    options.Lockout.MaxFailedAccessAttempts = 5;
+//});
 
 //builder.Services.AddIdentity<IdentityUser, IdentityRole>()
 //    .AddEntityFrameworkStores<ShopperDbContext>();
