@@ -15,7 +15,9 @@ namespace PXLProShopper04.Controllers
 
         public IActionResult Index()
         {
-            string username = "Etienne";
+            // wanneer men niet is ingelogd is het guest
+            // indien logging system er is: naam van de gebruiker tonen
+            string username = "Guest";
             ViewData["Username"] = username;
             return View();
         }
